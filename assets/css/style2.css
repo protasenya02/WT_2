@@ -1,0 +1,183 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+    background: #fff;
+    color: #4e525d;
+    cursor: default;
+    height: 100%;
+    width: 100%;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+:focus, :active {
+    outline: none;
+}
+
+a:focus, a:active {
+    outline: none;
+}
+
+nav, footer, header, aside {
+    display: block;
+}
+
+input, button, textarea {
+    font-family: inherit;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+a, a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    adding: 0 15px;
+}
+
+/* header */
+.header {
+    z-index: 9999;
+    position: sticky;
+    top:0;
+    background-color: #fff;
+    box-shadow:  0 0 10px rgba(0,0,0, 0.2);
+}
+
+.header_inner {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    height: 100px;
+    align-items: center;
+}
+
+.header_logo {
+    font-size: 43px;
+    line-height: 24px;
+    padding: 15px;
+    color: #49cbcd;
+    font-family: 'Kaushan Script', cursive;
+}
+
+.header_nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    list-style: none;
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 400;
+    font-family: "Open Sans";
+}
+
+/* nav */
+.header_nav a {
+    color: #60646c;
+    padding: 37px 20px;
+    text-decoration: none;
+}
+
+.header_nav a:hover {
+    background-color: #f8f9fb;
+    color: #49cbcd;
+    border-bottom: 3px solid #49cbcd;
+}
+
+.active {
+    background-color: #f8f9fb;
+    color: #49cbcd;
+    border-bottom: 3px solid #49cbcd;
+}
+
+/* form */
+.city_form {
+    max-width: 570px;
+    margin: 0 auto;
+}
+
+.form_inner {
+    margin: 100px auto;
+}
+
+.form_title {
+    font-size: 30px;
+    text-align: center;
+}
+
+.form_inner input, .form_inner textarea {
+    display: block;
+    width: 100%;
+    background: #f7f7f7;
+    border-radius: 3px;
+
+    outline: none;
+    margin: 30px 0;
+    line-height: 44px;
+    font-size: 16px;
+}
+
+.form_inner input[type="submit"]{
+    margin: 0  auto;
+    width: 170px;
+}
+
+.form_inner input[type="submit"] {
+    margin-top: 30px;
+    background: #49cbcd;
+    border: 3px solid #49cbcd;
+    color: #fff;
+    font-size: 22px;
+    transition-duration: 0.4s;
+}
+
+.form_inner textarea {
+    resize: none;
+    padding: 10px;
+}
+
+.form_inner input[type="submit"]:hover {
+    color: #49cbcd;
+    background-color: #fff;
+    border: 3px solid #49cbcd;
+}
+
+/* cities */
+.cities_text {
+    font-size: 20px;
+    color: #4e525d;
+}
+
+.cities_error {
+    font-size: 20px;
+    color: #4e525d;
+    text-align: center;
+}
+
+
